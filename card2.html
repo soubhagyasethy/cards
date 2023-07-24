@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Two</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: #8bc6ec;
+        background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        height: 500px;
+        width: 300px;
+        border-radius: 1rem;
+        background-color: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+      }
+
+      .card img {
+        height: 30%;
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+
+      .card h2 {
+        font-size: 1.1rem;
+      }
+
+      #summary {
+        font-size: 0.8rem;
+        text-align: center;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+      }
+
+      .plan {
+        height: 13%;
+        width: 90%;
+        background-color: rgb(158, 232, 11);
+        border-radius: 0.5rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .leftBox {
+        width: 60%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .leftBox img {
+        height: 80%;
+        width: 35%;
+      }
+
+      .price p {
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      .rightBox {
+        width: 40%;
+        height: 100%;
+        font-size: 0.8rem;
+        font-weight: bold;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      button {
+        height: 10%;
+        width: 90%;
+        background-color: rgb(28, 28, 79);
+        color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="./images/icon.jpg" alt="icon" />
+        <h2>Order Summary</h2>
+        <p id="summary">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          incidunt.
+        </p>
+
+        <div class="plan">
+          <div class="leftBox">
+            <img src="./images/music.png" alt="music" />
+            <div class="price">
+              <p>Annual Plan</p>
+              <p>$99.9/year</p>
+            </div>
+          </div>
+          <div class="rightBox"><a href="#">Change</a></div>
+        </div>
+
+        <button>Proceed to Payment</button>
+
+        <a href="#">Cancel Order</a>
+      </div>
+    </div>
+  </body>
+</html>
