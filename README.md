@@ -9,3 +9,7 @@
 ### Card 2:
 
 - Order Summary card.
+
+### Card 3:
+
+- Advertisement card for online course.
